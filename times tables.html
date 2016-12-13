@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		for(var n =1; n<3; n++){
+			for(var j=1; j<=n; j++){
+				document.write(n+"*"+j+"="+n*j+"&nbsp;&nbsp;");
+			}
+			document.write("<br/>");
+		}
+		for(var n =3; n<5; n++){
+			for(var j=1; j<=2; j++){
+				document.write(n+"*"+j+"="+n*j+"&nbsp;&nbsp;");
+			}
+			for(var j=3; j<=n; j++){
+				document.write("&nbsp;&nbsp;"+n+"*"+j+"="+n*j);
+			}
+			document.write("<br/>");
+		}
+		for(var n =5; n<10; n++){
+			for(var j=1; j<=n; j++){
+				document.write(n+"*"+j+"="+n*j+"&nbsp;&nbsp;");
+			}
+			document.write("<br/>");
+		}
+	</script>
+</body>
+</html>
