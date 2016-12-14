@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		for (var i = 10; i >= 0; i ++){
+			var year=prompt("请输入年份");
+			if(year%100==0){
+				if(parseInt(year/400)==year/400){alert("这是闰年");
+				}else{
+					alert("这是不闰年");
+				}
+			}else{
+				if(parseInt(year/4)==year/4){
+					alert("这是闰年");
+				}else{
+					alert("这是不闰年");
+				}
+			}
+		}
+	</script>
+</body>
+</html>

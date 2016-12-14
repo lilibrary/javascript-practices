@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	for (var i = 10; i >= 0; i ++){
+			var height=prompt("请输入体重，单位kg");
+			var weight=prompt("请输入身高，单位cm");
+			var BMI;
+			BMI=weight/(height*2);
+			alert("您的BMI指数为"+BMI);
+			if(BMI<18.5){alert("体重过轻");}
+			if(18.5<=BMI&&BMI<25){alert("体重正常");}
+			if(25<=BMI&&BMI<28){alert("体重过重");}
+			if(28<=BMI&&BMI<32){alert("体重肥胖");}
+			if(32<BMI){alert("体重非常肥胖");}
+	}
+	</script>
+</body>
+</html>

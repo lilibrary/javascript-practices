@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	for(var abc=100;abc<1000;abc++){
+		var a=parseInt(abc/100);
+		var b=parseInt((abc-a*100)/10);
+		var c=parseInt(abc-a*100-b*10);
+		console.log(a,b,c,abc)
+		if((a*a*a+b*b*b+c*c*c)==abc){
+		document.write(a+"&nbsp;"+b+"&nbsp;"+c+"&nbsp;"+abc+"<br/>");}
+	}
+	</script>
+</body>
+</html>
