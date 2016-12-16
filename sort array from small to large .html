@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var ordered = [];
+	var arr=[9,2,33,66,55,56,34,1,91,88];
+	for(i=0; i<arr.length;i++){
+		ordered[ordered.length]=arr[i];
+		for(j=ordered.length+1+i;j>-1;j--){
+			if(arr[i]<ordered[j]){
+				var tmp=ordered[j];
+				ordered[j] = arr[i];
+				ordered[j+1] = tmp;
+			}
+		console.log("内 "+ordered);
+		}
+	console.log("外 "+ordered);
+	}
+	console.log("final "+ordered);
+	</script>
+</body>
+</html>
+
+<!-- http://blog.csdn.net/lg1259156776/article/details/48689323 -->
